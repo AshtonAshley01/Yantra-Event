@@ -119,17 +119,41 @@ li {
   align-items: center;
   justify-content: center;
   margin: 1em;
-  padding: 1.5em;
+  padding: 1em;
   background-color: #d9d9d9;
-  border-radius: 10px;
-  font-size: 20px;
+  border-radius: 12px;
   border-color: #d9d9d9;
   text-align: center;
+  font-weight: 700;
+  width: 69.46px;
+  height: 54px;
 }
 
 .timer-label {
-  font-family: 'Montserrat';
-  font-size: 16px;
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 15px;
   margin-bottom: 5px;
   opacity: 1;
+}
+
+#days {
+  color: #ddc07e;
+  font-size: 40px;
+}
+
+#hours {
+  color: #ddc07e;
+  font-size: 40px;
+}
+
+#minutes {
+  color: #ddc07e;
+  font-size: 40px;
+}
+
+#seconds {
+  color: #ddc07e;
+  font-size: 40px;
 }
