@@ -190,3 +190,25 @@ li {
     font-size: 14px;
   }
 }
+
+.responsive-svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  #navbar-id {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .navbar {
+    text-align: center;
+  }
+  .navbar li {
+    margin: 0.3em;
+  }
+}
