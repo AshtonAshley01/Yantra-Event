@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron, "Martel Sans", sans-serif;
+}
+.IAS-logo {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
+.video-container {
+  height: max-content;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .logos {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-container .caption .start {
+  align-self: flex-start;
+}
+
+.video-container .caption .end {
+  align-self: flex-end;
+}
+
+.video-container .Techtronix-heading {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10em;
+}
+.video-container .date {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0em;
+}
+.video-container .button {
+  position: absolute;
+  left: calc(50% - 626px/2);
+  margin-top:4em;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: black;
+  padding: 0.2em;
+  border-bottom: 4px solid white;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+#navbar-id {
+  list-style-type: none;
+  margin-right: 12em;
+  margin-left: 12em;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+li:hover {
+  outline: 0.2em solid white;
+  border-radius: 40px;
+}
+
+li{
+    padding:0.3em;
+}
+
+.timer-block {
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  background-color:#D9D9D9;
+  border-radius: 5px;
+  font-size: 20px;
+  border-color:#D9D9D9;
+}
