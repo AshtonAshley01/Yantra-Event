@@ -157,3 +157,36 @@ li {
   color: #ddc07e;
   font-size: 40px;
 }
+
+/* Add responsive styles */
+@media (max-width: 390px) {
+  /* Navbar styles */
+  #navbar-id {
+    margin-right: 1em;
+    margin-left: 1em;
+    font-size: 18px;
+  }
+
+  /* Caption styles */
+  .caption {
+    padding: 1em;
+  }
+
+  /* Techtronix heading styles */
+  .Techtronix-heading {
+    padding: 1em;
+  }
+
+  /* Timer styles */
+  .Timer {
+    flex-direction: column;
+  }
+
+  .timer-block {
+    margin: 0.5em;
+    padding: 0.5em;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+}
