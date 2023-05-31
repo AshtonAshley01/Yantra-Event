@@ -28,3 +28,9 @@ var countdown = setInterval(function() {
     document.getElementById("timer").innerHTML = "Countdown expired";
   }
 }, 1000);
+
+// Hamburger Menu JS
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  var navbar = document.getElementById('navbar-id');
+  navbar.classList.toggle('show-mobile-menu');
+});

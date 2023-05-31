@@ -1,40 +1,40 @@
 @font-face {
-  font-family: "made_soulmaze_brushregular";
-  src: url("made_soulmaze_brush_personal_use-webfont.woff2") format("woff2"),
-    url("made_soulmaze_brush_personal_use-webfont.woff") format("woff");
+  font-family: "soulmaze";
+  src: url("./assests/webfontkit-20230531-005510/made_soulmaze_brush_personal_use-webfont.woff2") format("woff2"),
+    url("./assests/webfontkit-20230531-005510/made_soulmaze_brush_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "made_soulmazeitalic";
-  src: url("made_soulmaze_italic_personal_use-webfont.woff2") format("woff2"),
-    url("made_soulmaze_italic_personal_use-webfont.woff") format("woff");
+  src: url("./assests/webfontkit-20230531-005510/made_soulmaze_italic_personal_use-webfont.woff2") format("woff2"),
+    url("./assests/webfontkit-20230531-005510/made_soulmaze_italic_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "made_soulmaze_outlineitalic";
-  src: url("made_soulmaze_outline_italic_personal_use-webfont.woff2")
+  src: url("./assests/webfontkit-20230531-005510/made_soulmaze_outline_italic_personal_use-webfont.woff2")
       format("woff2"),
-    url("made_soulmaze_outline_italic_personal_use-webfont.woff") format("woff");
+    url("./assests/webfontkit-20230531-005510/made_soulmaze_outline_italic_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "made_soulmaze_outlineregular";
-  src: url("made_soulmaze_outline_personal_use-webfont.woff2") format("woff2"),
-    url("made_soulmaze_outline_personal_use-webfont.woff") format("woff");
+  src: url("./assests/webfontkit-20230531-005510/made_soulmaze_outline_personal_use-webfont.woff2") format("woff2"),
+    url("./assests/webfontkit-20230531-005510/made_soulmaze_outline_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "made_soulmazeregular";
-  src: url("made_soulmaze_personal_use-webfont.woff2") format("woff2"),
-    url("made_soulmaze_personal_use-webfont.woff") format("woff");
+  src: url("./assests/webfontkit-20230531-005510/made_soulmaze_personal_use-webfont.woff2") format("woff2"),
+    url("./assests/webfontkit-20230531-005510/made_soulmaze_personal_use-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Orbitron, "Martel Sans", sans-serif;
+  
 }
 .IAS-logo {
   z-index: 1;
@@ -61,6 +61,7 @@
   position: absolute;
   object-fit: cover;
   z-index: 0;
+  min-height: 130%;
 }
 
 /* Just styling the content of the div, the magic in the previous rules */
@@ -77,6 +78,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
+  font-family: Orbitron, "Martel Sans", sans-serif;
 }
 
 .video-container .caption .start {
@@ -122,7 +124,7 @@
   background-color: black;
   padding: 0.2em;
   border-bottom: 4px solid white;
-  font-family: "made_soulmaze_brushregular";
+
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
@@ -134,6 +136,7 @@
   list-style-type: none;
   margin-right: 12em;
   margin-left: 12em;
+  font-family:  "soulmaze";
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -142,8 +145,7 @@
 a {
   text-decoration: none;
   color: white;
-  font-family: "Martel Sans", sans-serif;
-  font-family: "Orbitron";
+
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
@@ -159,6 +161,11 @@ li:hover {
 
 li {
   padding: 0.3em;
+}
+
+.responsive-svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .timer-block {
@@ -207,6 +214,64 @@ li {
 }
 
 /* Add responsive styles */
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .navbar {
+    text-align: center;
+  }
+  .navbar li {
+    margin: 0.3em;
+  }
+  #navbar-id {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+  /* Show hamburger menu icon */
+  .hamburger-menu {
+    display: block;
+  }
+  /* Show mobile menu when the hamburger menu icon is clicked */
+  #navbar-id {
+    display: none;
+  }
+
+  #navbar-id.show-mobile-menu {
+      display: flex;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  #navbar-id {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .navbar {
+    text-align: center;
+  }
+  .navbar li {
+    margin: 0.3em;
+  }
+}
+
+/* Older Media Queries */
 @media (max-width: 390px) {
   /* Navbar styles */
   #navbar-id {
@@ -246,27 +311,5 @@ li {
     width: auto;
     height: auto;
     font-size: 14px;
-  }
-}
-
-.responsive-svg {
-  max-width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px (e.g., mobile devices) */
-  #navbar-id {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px (e.g., mobile devices) */
-  .navbar {
-    text-align: center;
-  }
-  .navbar li {
-    margin: 0.3em;
   }
 }
