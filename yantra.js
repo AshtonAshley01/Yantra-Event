@@ -1,4 +1,5 @@
 
+// ------------------------------------------NAVBAR---------------------------------------------------
 // Set the countdown date (adjust the date as per your requirements)
 var countdownDate = new Date("June 02, 2023 00:00:00").getTime();
 
@@ -33,4 +34,42 @@ var countdown = setInterval(function() {
 document.querySelector('.hamburger-menu').addEventListener('click', function() {
   var navbar = document.getElementById('navbar-id');
   navbar.classList.toggle('show-mobile-menu');
+});
+
+
+
+// ---------------------------------EVENT SCHEDULE------------------------------------------------
+//Expnad Functionality
+const expand_btn = document.querySelector(".expand");
+const ev_schedule_div = document.querySelector("#event_schedule");
+expand_btn.addEventListener("click", () => {
+  ev_schedule_div.style.height = "auto";
+  expand_btn.style.display = "none";
+});
+
+//Different days and events visibility
+const day1 = document.querySelector("#d_1");
+const day2 = document.querySelector("#d_2");
+const day3 = document.querySelector("#d_3");
+
+const timelines_day_1 = document.querySelector("#timeline_day-1");
+const timelines_day_2 = document.querySelector("#timeline_day-2");
+const timelines_day_3 = document.querySelector("#timeline_day-3");
+
+day1.addEventListener("click", () => {
+  timelines_day_1.classList.remove("hidden_timeline");
+  timelines_day_2.classList.add("hidden_timeline");
+  timelines_day_3.classList.add("hidden_timeline");
+});
+
+day2.addEventListener("click", () => {
+  timelines_day_1.classList.add("hidden_timeline");
+  timelines_day_2.classList.remove("hidden_timeline");
+  timelines_day_3.classList.add("hidden_timeline");
+});
+
+day3.addEventListener("click", () => {
+  timelines_day_1.classList.add("hidden_timeline");
+  timelines_day_2.classList.add("hidden_timeline");
+  timelines_day_3.classList.remove("hidden_timeline");
 });
