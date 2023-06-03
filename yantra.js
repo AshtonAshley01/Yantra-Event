@@ -1,7 +1,6 @@
-
 // ------------------------------------------NAVBAR---------------------------------------------------
 // Set the countdown date (adjust the date as per your requirements)
-var countdownDate = new Date("June 02, 2023 00:00:00").getTime();
+var countdownDate = new Date("June 04, 2023 10:00:00").getTime();
 
 // Update the countdown every 1 second
 var countdown = setInterval(function() {

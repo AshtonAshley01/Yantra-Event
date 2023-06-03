@@ -321,7 +321,6 @@ li {
     font-size: 14px;
   }
 }
-
 /* -----------------------------------ORGANIZER SECTION-------------------------------------------------- */
 body {
   margin: 0;
@@ -335,7 +334,7 @@ body {
   padding: 50px 0px;
   margin-top: 100px;
 }
-#organizer-head {
+#organizer-head{
   color: white;
   font-size: 50px;
   text-align: center;
@@ -344,12 +343,12 @@ body {
   padding-bottom: 30px;
 }
 
-#organizer-head span {
+#organizer-head span{
   font-family: "made_soulmaze_outlineitalic";
 }
 
-#organizer-section {
-  font-family: "Roborto", sans-serif;
+#organizer-section{
+    font-family: 'Roborto', sans-serif;
 }
 #section {
   padding-top: 20px;
@@ -402,7 +401,7 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.link-div1 a {
+.link-div1 a{
   font-size: 13px;
 }
 .about-a {
@@ -436,12 +435,11 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.link-div2 a {
+.link-div2 a{
   font-size: 13px;
 }
 
-.link-div1 a:hover,
-.link-div2 a:hover {
+.link-div1 a:hover , .link-div2 a:hover{
   color: lightgrey;
 }
 .about-a {
@@ -454,30 +452,31 @@ body {
   position: absolute;
 }
 
-#section1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: start;
+
+#section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
 }
 
-#sub-section1,
-#sub-section2 {
+#sub-section1,#sub-section2{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-#sub-section1 {
+#sub-section1{
   padding-bottom: 30px;
 }
-#sub-section2 {
+#sub-section2{
   padding-top: 30px;
 }
 
-.organizer-div {
+.organizer-div{
   color: white;
   width: 700px;
   margin: 0px 30px;
+  font-size: 20px;
 }
 
 /* @media screen and (max-width: 750px) {
@@ -518,13 +517,16 @@ body {
   }
 } */
 
-@media screen and (max-width: 550px) {
-  .organizer-div {
+
+@media screen and (max-width:550px) {
+
+  .organizer-div{
     font-size: 12px;
   }
-  #organizer-head {
+  #organizer-head{
     font-size: 25px;
   }
+  
 }
 @media screen and (max-width: 460px) {
   .organiser-img {
@@ -561,6 +563,11 @@ body {
   }
 }
 
+
+
+
+
+
 /* ---------------------------------------EVENTS SCHEDULE------------------------------------------------ */
 #event_schedule {
   font-family: "made_soulmazeitalic";
@@ -581,6 +588,7 @@ body {
   color: white;
   text-align: center;
   padding-bottom: 20px;
+
 }
 
 .head_text {
@@ -619,6 +627,7 @@ body {
   width: 100%;
   /* background-color: red; */
   margin-top: 6rem;
+
 }
 
 .day_boxes {
@@ -637,7 +646,7 @@ body {
   background-color: white;
   color: black;
   font-weight: 700;
-  padding: 0.75rem 2rem;
+  padding: .75rem 2rem;
 }
 
 .day_box:hover {
@@ -649,7 +658,7 @@ body {
   height: 100%;
   width: 80%;
   background: rgba(217, 217, 217, 0.1);
-  border: 3px solid #ffffff;
+  border: 3px solid #FFFFFF;
   position: relative;
   z-index: 1;
 }
@@ -665,6 +674,7 @@ body {
 .date_text {
   font-size: 10px;
   font-weight: 600;
+
 }
 
 .timeline_box {
@@ -687,7 +697,7 @@ body {
 }
 
 .broken_line {
-  width: 0.25rem;
+  width: .25rem;
   background: white91;
   /* border: 4rgba(197, 202, 154, 0.58)ed; */
   position: relative;
@@ -698,7 +708,7 @@ body {
   height: 2rem;
   border-radius: 20px;
   background: rgba(217, 217, 217, 0.2);
-  border: 3px solid #d1d1d1;
+  border: 3px solid #D1D1D1;
   position: absolute;
   top: 20%;
   transform: translateX(-45%);
@@ -751,11 +761,7 @@ body {
   height: 100%;
 
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(208, 209, 160, 0.38) 6.92%,
-    rgba(255, 247, 247, 0) 84.18%
-  );
+  background: linear-gradient(90deg, rgba(208, 209, 160, 0.38) 6.92%, rgba(255, 247, 247, 0) 84.18%);
   /* background: #000; */
 }
 
@@ -773,55 +779,57 @@ body {
   display: none;
 }
 
+
 /* media queries */
+
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (min-width: 350px) {
   .heads {
-    font-size: 25px;
-    height: 0.2rem;
+      font-size: 25px;
+      height: 0.2rem;
   }
 
   .day_boxes {
-    font-size: 15px;
-    margin: -1.05rem auto;
+      font-size: 15px;
+      margin: -1.05rem auto;
   }
 
   .day_box {
-    padding: 0.15rem 1.2rem;
+      padding: .15rem 1.2rem;
   }
 
   .date_text {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .timeline_box {
-    margin-top: 3%;
+      margin-top: 3%;
   }
 
   .content {
-    margin-top: 0.2rem;
-    margin-left: 3rem;
-    font-size: 12px;
+      margin-top: 0.2rem;
+      margin-left: 3rem;
+      font-size: 12px;
   }
 
   .circle {
-    width: 1.2rem;
-    height: 1.2rem;
+      width: 1.2rem;
+      height: 1.2rem;
   }
 
   .in_circle {
-    width: 0.8rem;
-    height: 0.8rem;
+      width: .8rem;
+      height: 0.8rem;
   }
 
   .expand {
-    height: 6rem;
-    margin-top: -6.2rem;
+      height: 6rem;
+      margin-top: -6.2rem;
   }
 
   .schedule {
-    height: 37%;
+      height: 37%;
   }
 
   .expand_text {
@@ -835,50 +843,50 @@ body {
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 599px) {
   .heads {
-    font-size: 35px;
-    height: 0.7rem;
+      font-size: 35px;
+      height: 0.7rem;
   }
 
   .day_boxes {
-    font-size: 18px;
-    margin: -1.5rem auto;
+      font-size: 18px;
+      margin: -1.5rem auto;
   }
 
   .day_box {
-    padding: 0.25rem 1.4rem;
+      padding: .25rem 1.4rem;
   }
 
   .date_text {
-    font-size: 20px;
+      font-size: 20px;
   }
 
   .timeline_box {
-    margin-top: 3.4%;
+      margin-top: 3.4%;
   }
 
   .content {
-    margin-top: 0.2rem;
-    margin-left: 3rem;
-    font-size: 15px;
+      margin-top: 0.2rem;
+      margin-left: 3rem;
+      font-size: 15px;
   }
 
   .circle {
-    width: 1.4rem;
-    height: 1.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
   }
 
   .in_circle {
-    width: 1rem;
-    height: 1rem;
+      width: 1rem;
+      height: 1rem;
   }
 
   .expand {
-    height: 8rem;
-    margin-top: -8.2rem;
+      height: 8rem;
+      margin-top: -8.2rem;
   }
 
   .schedule {
-    height: 47%;
+      height: 47%;
   }
 
   .expand_text {
@@ -891,50 +899,50 @@ body {
 /* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {
   .heads {
-    font-size: 40px;
-    height: 2rem;
+      font-size: 40px;
+      height: 2rem;
   }
 
   .day_boxes {
-    font-size: 18px;
-    margin: -1.8rem auto;
+      font-size: 18px;
+      margin: -1.8rem auto;
   }
 
   .day_box {
-    padding: 0.45rem 1.6rem;
+      padding: .45rem 1.6rem;
   }
 
   .date_text {
-    font-size: 1.8rem;
+      font-size: 1.8rem;
   }
 
   .timeline_box {
-    margin-top: 3.6%;
+      margin-top: 3.6%;
   }
 
   .content {
-    margin-top: 0.3rem;
-    margin-left: 4rem;
-    font-size: 15px;
+      margin-top: 0.3rem;
+      margin-left: 4rem;
+      font-size: 15px;
   }
 
   .circle {
-    width: 1.6rem;
-    height: 1.6rem;
+      width: 1.6rem;
+      height: 1.6rem;
   }
 
   .in_circle {
-    width: 1.1rem;
-    height: 1.1rem;
+      width: 1.1rem;
+      height: 1.1rem;
   }
 
   .expand {
-    height: 10rem;
-    margin-top: -10.2rem;
+      height: 10rem;
+      margin-top: -10.2rem;
   }
 
   .schedule {
-    height: 60%;
+      height: 60%;
   }
 
   .expand_text {
@@ -947,48 +955,48 @@ body {
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 891px) {
   .heads {
-    font-size: 40px;
+      font-size: 40px;
   }
 
   .day_boxes {
-    font-size: 18px;
+      font-size: 18px;
   }
 
   .day_box {
-    padding: 0.65rem 1.8rem;
+      padding: .65rem 1.8rem;
   }
 
   .date_text {
-    font-size: 18px;
+      font-size: 18px;
   }
 
   .timeline_box {
-    margin-top: 3.8%;
+      margin-top: 3.8%;
   }
 
   .content {
-    margin-top: 0.5rem;
-    margin-left: 5rem;
-    font-size: 15px;
+      margin-top: 0.5rem;
+      margin-left: 5rem;
+      font-size: 15px;
   }
 
   .circle {
-    width: 1.8rem;
-    height: 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem;
   }
 
   .in_circle {
-    width: 1.3rem;
-    height: 1.3rem;
+      width: 1.3rem;
+      height: 1.3rem;
   }
 
   .expand {
-    height: 12rem;
-    margin-top: -12.2rem;
+      height: 12rem;
+      margin-top: -12.2rem;
   }
 
   .schedule {
-    height: 65%;
+      height: 65%;
   }
 
   .expand_text {
@@ -1001,111 +1009,116 @@ body {
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
   .heads {
-    font-size: 50px;
+      font-size: 50px;
+
   }
 
   .day_boxes {
-    font-size: 20px;
+      font-size: 20px;
   }
 
   .day_box {
-    padding: 0.75rem 2rem;
+      padding: .75rem 2rem;
   }
 
   .date_text {
-    font-size: 25px;
+      font-size: 25px;
   }
 
   .timeline_box {
-    margin-top: 4%;
+      margin-top: 4%;
   }
 
   .content {
-    margin-top: 0.8rem;
-    margin-left: 7rem;
-    font-size: 15px;
+      margin-top: 0.8rem;
+      margin-left: 7rem;
+      font-size: 15px;
   }
 
   .circle {
-    width: 2rem;
-    height: 2rem;
+      width: 2rem;
+      height: 2rem;
   }
 
   .in_circle {
-    width: 1.5rem;
-    height: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
   }
 
   .expand {
-    height: 14rem;
-    margin-top: -14.2rem;
+      height: 14rem;
+      margin-top: -14.2rem;
   }
 
   .schedule {
-    height: 60%;
+      height: 60%;
   }
 
   .expand_text {
-    font-size: 50px;
-    padding-left: 0px;
-    text-align: center;
+      font-size: 50px;
+      padding-left: 0px;
+      text-align: center;
   }
+
 }
 
+
+
+
 /* ----------------------------------------------------------WHY PARTICIPATE--------------------------------------------- */
-.body {
+.body{
   background-color: black;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
 }
-.text {
+.text{
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
   margin-top: 200px;
+
 }
-.IEEE {
+.IEEE{
   /* position: absolute; */
-  width: 997px;
+  width: 55%;
   /* height: 341px; */
   left: 123px;
   top: 50px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 143.19%;
   text-align: justify;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.test1 {
+.test1{
   margin-left: 70px;
   margin-bottom: 60px;
 }
-.test2 {
+.test2{
   margin-left: 70px;
   margin-top: 40px;
 }
-.Ieee {
+.Ieee{
   /* position: absolute; */
-  width: 997px;
+  width: 55%;
   /* height: 341px; */
   left: 123px;
   top: 420px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 143.19%;
   text-align: justify;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.rules {
+.rules{
   background-color: black;
   color: white;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   padding-right: 40px;
   padding-left: 48px;
   padding-top: 5px;
@@ -1115,15 +1128,18 @@ body {
   height: 55px;
   /* left: 200px;
   top: 320px; */
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   /* border-radius: 212px; */
   font-size: 120%;
   margin-top: 20px;
 }
-.prizes {
+.rules3{
+  font-size: 1.3rem;
+}
+.prizes{
   background-color: black;
   color: white;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   padding-right: 40px;
   padding-left: 48px;
   padding-top: 5px;
@@ -1133,18 +1149,21 @@ body {
   height: 55px;
   left: 240px;
   top: 700px;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   /* border-radius: 212px; */
   font-size: 120%;
   margin-top: 20px;
 }
-.ds {
+.prizes3{
+  font-size: 1.2rem;
+}
+.ds{
   position: absolute;
   width: 547px;
   height: 190px;
   right: 100px;
   top: 5px;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 70px;
@@ -1152,28 +1171,28 @@ body {
   text-align: right;
   color: white;
 }
-.dev {
-  font-family: "made-soulmaze", sans-serif;
+.dev{
+  font-family: 'made-soulmaze', sans-serif;
   color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 95px;
 }
-.spark {
-  font-family: "made-soulmaze-outline-2", sans-serif;
+.spark{
+  font-family: 'made-soulmaze-outline-2', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 95px;
 }
-.part {
+.part{
   position: absolute;
   width: 547px;
   height: 190px;
   right: 100px;
   top: 350px;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -1181,37 +1200,37 @@ body {
   text-align: right;
   color: white;
 }
-.line {
+.line{
   position: absolute;
   /* width: 800px; */
   height: 540px;
   /* left: 863px; */
   right: 30px;
   top: -500px;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   /* transform: rotate(-90deg); */
   margin-top: 475px;
 }
-.i1circle {
+.i1circle{
   position: absolute;
   width: 40px;
   height: 40px;
   /* left: 1245px; */
-  right: 10px;
+  right: 12px;
   top: 80px;
-  background: #d9d9d9;
+  background: #D9D9D9;
   border-radius: 50%;
 }
-.i2circle {
+.i2circle{
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 10px;
+  right: 12px;
   top: 380px;
-  background: #d9d9d9;
+  background: #D9D9D9;
   border-radius: 50%;
 }
-.o1circle {
+.o1circle{
   box-sizing: border-box;
   position: absolute;
   width: 60px;
@@ -1219,47 +1238,77 @@ body {
   right: 2px;
   top: 70px;
   background: rgba(0, 0, 0, 0.2);
-  border: 3px solid #d1d1d1;
+  border: 3px solid #D1D1D1;
   border-radius: 50%;
 }
-.o2circle {
+.o2circle{
   box-sizing: border-box;
   position: absolute;
   width: 60px;
   height: 60px;
   right: 2px;
   top: 370px;
-  border: 3px solid #d1d1d1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 3px solid #D1D1D1;
   border-radius: 50%;
 }
-
+/*----------------Prizes And Sponsors----------------*/
 .prizes_channel {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: "Soulmaze", sans-serif;
+  font-family: 'made-soulmaze-outline-2', sans-serif;
   padding:1em;
-  font-size: 2.5em;
+  font-size: 30px;
+  margin-bottom: -20%;
+  margin-top: -20%;
+}
+.ph1{
+  margin-left: 25%;
+}
+.p123{
+  color: white;
+  margin-top: 40%;
+  margin-left: -35%;
+  font-size: 3rem;
+  line-height: 5rem;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
 }
 .sponser_channel{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  font-family: "Soulmaze", sans-serif;
-  padding:1em;
-  font-size: 2.5em;
+  margin-left: 8%;
+  font-family: 'made-soulmaze-outline-2', sans-serif;
+  /* padding:0.8rem; */
+  font-size: 30px;
 }
+.sponser_channel img{
+  display: flex;
+  flex-direction: column;
+  margin-top: 45%;
+  border: 3px solid white;
+  align-items: center;
+  width: 40%;
+  margin-left: -33%;
+  height: 300px;
+
+}
+
+
+
 
 
 /* ---------------------------------------------RULES,FAQ AND FOOTER----------------------------------------- */
 
-.sec2 {
+#sec2{
   position: relative;
   top: 90%;
+
+
 }
-#RULES {
+#RULES{
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -1288,7 +1337,7 @@ body {
   height: 400px;
 } 
 */
-.rules1 {
+.rules1{
   box-sizing: border-box;
   position: absolute;
   width: 30%;
@@ -1297,7 +1346,7 @@ body {
   margin-top: 8%;
   border: 2px solid white;
 }
-.rules2 {
+.rules2{
   box-sizing: border-box;
   position: absolute;
   width: 30%;
@@ -1306,39 +1355,41 @@ body {
   margin-top: 10%;
   border: 2px solid white;
 }
-.rules2 h2 {
+.rules2 h2{
   padding-left: 1.25rem;
-  font-family: "made-soulmaze-outline-2", sans-serif;
+  font-family: 'made-soulmaze-outline-2', sans-serif;
   font-style: italic;
   font-weight: 900;
-  font-size: 3.75rem;
-  line-height: 6.25rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
   color: white;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
 }
-.rules2 i {
+.rules2 i{
   position: absolute;
   color: white;
   left: 70%;
-  margin-top: -26%;
-  font-size: 2.8125rem;
+  margin-top: -12%;
+  font-size: 2.3rem;
   font-weight: 200;
+  
 }
-.rules2 h3 {
+.rules2 h3{
   padding-top: 0.625rem;
-  padding-left: 1.875rem;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  padding-left: 0.5rem;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 1.5625rem;
-  line-height: 3.75rem;
-  color: #ffffff;
+  font-weight: 200;
+  font-size: 0.9rem;
+  line-height: 1.12rem;
+  color: #FFFFFF;
+  width: 90%;
 }
-.rules2 hr {
-  margin-left: 5%;
-  width: 70%;
+.rules2 hr{
+  margin-left: 7%;
+  width: 80%;
 }
-.faq1 {
+.faq1{
   box-sizing: border-box;
   position: absolute;
   width: 30%;
@@ -1347,7 +1398,7 @@ body {
   margin-top: 8%;
   border: 2px solid white;
 }
-.faq2 {
+.faq2{
   box-sizing: border-box;
   position: absolute;
   width: 30%;
@@ -1356,39 +1407,42 @@ body {
   margin-top: 10%;
   border: 2px solid white;
 }
-.faq2 h2 {
+.faq2 h2{
   padding-left: 1.25rem;
-  font-family: "made-soulmaze-outline-2", sans-serif;
+  font-family: 'made-soulmaze-outline-2', sans-serif;
   font-style: italic;
   font-weight: 900;
-  font-size: 3.75rem;
-  line-height: 6.25rem;
-  color: #ffffff;
-  margin-bottom: 10%;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #FFFFFF;
+  margin-bottom: 1%; 
+  
 }
-.faq2 i {
+.faq2 i{
   position: absolute;
   color: white;
   left: 60%;
-  margin-top: -26%;
-  font-size: 2.8125rem;
+  margin-top: -12%;
+  font-size: 2.3rem;
   font-weight: 200;
+  
 }
-.faq2 h3 {
+.faq2 h3{
   padding-top: 0.625rem;
-  padding-left: 1.875rem;
-  font-family: "made-soulmaze-brush-5", sans-serif;
+  padding-left: 0.5rem;
+  font-family: 'made-soulmaze-brush-5', sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 1.5625rem;
-  line-height: 3.75rem;
-  color: #ffffff;
+  width: 90%;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.06rem;
+  color: #FFFFFF;
 }
-.faq2 hr {
-  margin-left: 5%;
-  width: 70%;
+.faq2 hr{
+  margin-left: 7%;
+  width: 80%;
 }
-#footer {
+#footer{
   position: relative;
   justify-content: space-between;
   align-items: center;
@@ -1396,19 +1450,19 @@ body {
   margin-top: 2%;
 }
 
-#footer i {
+#footer i{
   color: white;
   cursor: pointer;
   font-size: 1.875rem;
 }
-.fa-map-marker-alt {
+.fa-map-marker-alt{
   position: absolute;
   left: 5.06%;
   right: 93.33%;
   top: 99.21%;
   margin-top: 1%;
 }
-.fa-envelope {
+.fa-envelope{
   position: absolute;
   left: 41.41%;
   right: 55.8%;
@@ -1416,7 +1470,7 @@ body {
   bottom: 0.32%;
   margin-top: 1%;
 }
-.fa-phone-alt {
+.fa-phone-alt{
   position: absolute;
   left: 78.5%;
   right: 19%;
@@ -1424,184 +1478,225 @@ body {
   bottom: 0.32%;
   margin-top: 1%;
 }
-.contact1 h3 {
+.contact1 h3{
   position: absolute;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.625rem;
-  color: #ffffff;
+  color: #FFFFFF;
   left: 8%;
   top: 1.25rem;
 }
-.contact2 h3 {
+.contact2 h3{
   position: absolute;
   display: flex;
   align-items: flex-end;
   left: 45%;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.625rem;
   top: 0.3125rem;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.contact3 h3 {
+.contact3 h3{
   position: absolute;
   left: 82%;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   top: 0.625rem;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
   .rules1,
   .rules2,
   .faq1,
-  .faq2 {
-    width: 38%;
-    height: 30%;
-    align-items: center;
+  .faq2 
+  {
+      width: 39%;
+      height: 77%;
+      align-items: center;
   }
-  .rules1 {
-    margin-top: 40%;
+  .rules1{
+      margin-top: 10%;
   }
-  .rules2 {
-    margin-top: 42%;
+  .rules2{
+      margin-top: 12%;
   }
-  .faq1 {
-    margin-left: 55%;
-    margin-top: 40%;
+  .faq1
+  {
+      margin-left: 55%;
+      margin-top: 10%;
   }
-  .faq2 {
-    margin-left: 57%;
-    margin-top: 42%;
+  .faq2{
+      margin-left: 57%;
+      margin-top: 12%;
   }
   .rules2 h2,
   .faq2 h2 {
-    font-size: 15px;
-    line-height: 20px;
+      font-size: 15px;
+      line-height: 20px;
   }
-  .rules2 h3,
-  .faq2 h3 {
-    font-size: 10px;
-    line-height: 15px;
-    margin-left: -9%;
+  .rules2 h3{
+    font-size: 8px;
+    line-height: 12px;
+    width: 90%;
+  }
+  .faq2 h3{
+    font-size: 8px;
+    line-height: 12px;
+    width: 90%;
   }
   .rules2 i,
-  .faq2 i {
-    font-size: 15px;
-    margin-top: -30px;
+  .faq2 i{
+      font-size: 15px;
+      margin-top: -18px;
   }
   .rules2 hr,
-  .faq2 hr {
-    margin-left: 9%;
-    text-align: center;
+  .faq2 hr{
+      margin-left: 9%;
+      text-align: center;
   }
   .contact1 h3,
-  .contact2 h3 {
-    font-size: 12px;
-    line-height: 17px;
-    margin-left: -5px;
+  .contact2 h3{
+      font-size: 12px;
+      line-height: 17px;
+      margin-left: -5px;
   }
-  .contact3 h3 {
-    font-size: 10px;
-    line-height: 14px;
-    margin-left: -5px;
+  .contact3 h3{
+      font-size: 10px;
+      line-height: 14px;
+      margin-left: -5px;
+
   }
-  #footer {
-    margin-top: -10%;
+  #footer{
+      margin-top: -10%;
   }
-  #footer i {
-    margin-left: -12px;
-    font-size: 15px;
-    margin-top: 15px;
+  #footer i{
+      margin-left: -12px;
+      font-size: 15px;
+      margin-top: 15px;
   }
-  .IEEE {
-    width: 40%;
-    font-size: 12px;
-    margin-left: -20%;
+  .IEEE{
+      width: 50%;
+      font-size: 8px;
+      margin-left: -20%;
   }
-  .ds {
-    width: 40%;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 20%;
-    margin-left: -500px;
+  .ds{
+      width: 40%;
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 20%;
+      margin-right: -10%;
   }
-  .dev {
-    font-size: 25px;
-    line-height: 30px;
+  .dev{
+      font-size: 25px;
+      line-height: 30px;
   }
-  .spark {
-    font-size: 25px;
-    line-height: 30px;
+  .spark{
+      font-size: 25px;
+      line-height: 30px;
   }
-  .rules {
-    width: 45%;
-    font-size: 6px;
-    padding-left: 15px;
-    padding-top: 3px;
-    margin-left: -50px;
-    margin-top: 10;
-    height: 30px;
+  .rules{
+      width: 40%;
+      padding-left: 0;
+      padding-top: 3px;
+      margin-left: -60px;
+      /* margin-top: 10; */
+      height: 25px;
   }
-  .Ieee {
-    width: 40%;
-    font-size: 12px;
-    margin-left: -20%;
+  .rules3{
+      font-size: 7px;
+      line-height: 10px;
+      display: flex;
   }
-  .part {
-    width: 40%;
-    font-size: 25px;
-    line-height: 30px;
-    margin-top: 20%;
-    margin-left: -500px;
+  .Ieee{
+      width: 50%;
+      font-size: 8px;
+      margin-left: -20%;
   }
-  .prizes {
-    width: 45%;
-    font-size: 8px;
-    padding-left: 15px;
-    padding-top: 7px;
-    margin-left: -50px;
-    margin-top: 10;
-    height: 30px;
+  .part{
+      width: 40%;
+      font-size: 25px;
+      line-height: 30px;
+      margin-top: 5%;
+      margin-right: -10%;
+  }
+  .prizes{
+      width: 40%;
+      padding-left: 0;
+      padding-top: 3px;
+      margin-left: -60px;
+      margin-top: 10%;
+      height: 25px;
+  }
+  .prizes3{
+      font-size: 8px;
+      line-height: 10px;
+      display: flex;
   }
   /* .line{
       /* margin-left: -248%; */
-  .i1circle {
-    /* margin-left: -245.2%; */
-    height: 20px;
-    width: 20px;
-    margin-top: 20px;
-    margin-right: 15px;
+  .i1circle{
+      /* margin-left: -245.2%; */
+      height: 20px;
+      width: 20px;
+      margin-top: 20px;
+      margin-right: 10px;
+
   }
-  .i2circle {
-    /* margin-left: -245.2%; */
-    height: 20px;
-    width: 20px;
-    margin-top: 0px;
-    margin-right: 15px;
+  .i2circle{
+      /* margin-left: -245.2%; */
+      height: 20px;
+      width: 20px;
+      margin-top: 0px;
+      margin-right: 10px;
   }
-  .o1circle {
-    /* margin-top: 12.5px; */
-    /* margin-left: -244.5%; */
-    margin-top: 23px;
-    margin-right: 15px;
-    height: 35px;
-    width: 35px;
+  .o1circle{
+      /* margin-top: 12.5px; */
+      /* margin-left: -244.5%; */
+      margin-top: 23px;
+      margin-right: 12.5px;
+      height: 35px;
+      width: 35px;
   }
-  .o2circle {
-    /* margin-top: -12.5px; */
-    /* margin-left: -244.5%; */
-    height: 35px;
-    width: 35px;
-    margin-top: 3px;
-    margin-right: 15px;
+  .o2circle{
+      /* margin-top: -12.5px; */
+      /* margin-left: -244.5%; */
+      height: 35px;
+      width: 35px;
+      margin-top: 3px;
+      margin-right: 12.5px;
+  }
+  .prizes_channel {
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: -10%;
+  }
+  .ph1{
+    margin-left: 25%;
+    margin-top: 20%;
+  }
+  .p123{
+    font-size: 10px;
+    line-height: 20px;
+    margin-right: 15%;
+    margin-bottom: -30%;
+  }
+  .sponser_channel{
+    font-size: 13px;
+  }
+  .sponser_channel img{
+    margin-top: 90%;
+    width: 60%;
+    margin-left: -54%;
+    height: 180px;
+  
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1609,6 +1704,6 @@ body {
   .rules2,
   .faq1,
   .faq2 {
-    width: 30%;
+      width: 30%;
   }
 }
